@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(240deg, black, 2%, rgb(71, 71, 71), rgb(188, 0, 144), rgb(222, 4, 222), rgb(71, 71, 241), rgb(111, 186, 237));
+    background-size: 300% 300%;
+    animation: color 30s ease-in-out infinite;
+}
+
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.navbar-div {
+    background-color: rgba(0, 0, 0, 0.45);
+    position: relative;
+    display: flex;
+    height: 130px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px;
+}
+
+.logo-div {
+    position: relative;
+    top: 0;
+}
+
+.nav-div {
+    position: relative;
+    left : -16.5%;
+    top: -24px;
+}
+
+.app-div {
+    position: relative;
+    top: 0px;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.logo a {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-family: "Lobster", sans-serif;
+    font-size: 45px;
+    font-weight: 300;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    transition: 0.25s;
+} 
+
+.logo a:hover {
+    color: white;
+    -webkit-text-stroke: 1px white;
+    font-family: "Lobster", sans-serif;
+    font-size: 45px;
+    font-weight: 300;
+    background: transparent;
+    backdrop-filter: blur(20px);
+}
+
+.navbar {
+    left: 30%;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    top: 25px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: 0.25s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.navbar a.coin {
+    color: gold;
+}
+
+.navbar a.coin::before {
+    background: gold;
+}
+
+.app-button {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 50;
+    will-change: transform;
+}
+
+.app-button:disabled {
+    pointer-events: none;
+}
+
+.app-button:hover {
+    color: black;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+    border: 2px solid white;
+}
+
+.app-button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.footer-div{
+    background-color: rgba(0, 0, 0, 0.45);
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    bottom: 0;
+}
+
+.footer-div h4, h5 {
+    color: white;
+    padding: 20px;
+
+}
+
+.footer-div h4 {
+    font-family: "Lobster", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.footer-div h5 {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    bottom: 0;
+    right: 0;
+}
+
+main p {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px; 
+}
